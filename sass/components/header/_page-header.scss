@@ -1,0 +1,40 @@
+//  Header
+
+.page-header{
+width: 100%;
+min-height: 60px;
+background-color: $color-background-main;
+position: relative;
+}
+
+.nav-container {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ @extend %container;
+}
+
+
+
+
+// .page-header{
+//     position: fixed;
+//         width: 100%;
+//         min-height: 80px;
+//         top: 0;
+//         left: 0;
+//         background-color: $color-background-main;
+//         z-index: 1;
+// }
+
+
+// .nav-container {
+//     @extend %container;
+//     display: flex;
+//     align-items: center;
+// }
+
+// .header__nav {
+//     display: flex;
+//     align-items: center;
+// }

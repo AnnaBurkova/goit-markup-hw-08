@@ -29,9 +29,12 @@
 
 
 .menu-container {
-    padding: 48px 40px;
+    padding:40px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
 }
 
 .menu-navigation__list {
@@ -44,19 +47,20 @@
 }
 
 .menu-navigation__link{
-    color: $color-text-main;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    text-decoration-line: none;
-    cursor: pointer;
+color:$color-navy-blue;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+text-decoration: none;
+text-decoration-line: none;
+cursor: pointer;
 
-    &:hover,
-    &:focus {
-    color: $color-accent;
-  }
+&:hover,
+&:focus {
+color:$color-ocean;
+}
 }
 
 .menu-contacts__list{
@@ -64,51 +68,30 @@
 }
 
 .menu-contacts__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .menu-contacts__item:last-child{
-  margin-bottom: 64px;
+  margin-bottom: 48px;
 }
 
 .menu-contacts__link-phone{
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
-  color: $color-button-main;
-  margin-bottom: 32px;
-  text-decoration-line: none;
+font-weight: 600;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: $color-iris;
+margin-bottom: 32px;
+text-decoration-line: none;
 }
 
 .menu-contacts__link-mail{
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color:$color-text-additional;
-  text-decoration-line: none;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color:$color-slate;
+text-decoration-line: none;
 }
 
-.menu-social__list{
-  @extend %list;
-  display: flex;
-  align-content: flex-end;
-  align-items: flex-end;
-}
-
-.menu-social__link{
-  text-decoration-line: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: $color-accent;
-}
-
-.dash {
-  margin-left: 10px;
-  margin-right: 10px;
-  color:  rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
-}

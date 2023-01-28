@@ -1,0 +1,37 @@
+// Mobile-menu-button
+ 
+.mobile-menu__button,
+.mobile-menu__button-close {
+    position: absolute;
+     width: 32px;
+     height: 22px;
+     top: 50%;
+     right: 0px;
+     cursor: pointer; 
+     background-color: $color-background-main;
+     border: 0px;
+    transform: translate(0%,-50%);
+     
+    @media screen and (min-width:768px) {
+            display: none;
+        }
+}
+.mobile-menu__icon,
+.mobile-menu__icon-close {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(0%,-50%); 
+}
+
+
+.mobile-menu__button:hover .mobile-menu__icon,
+.mobile-menu__button:focus .mobile-menu__icon{
+    fill: $color-accent;
+}
+
+.mobile-menu__button-close:hover .mobile-menu__icon-close,
+.mobile-menu__button-close:focus .mobile-menu__icon-close{
+    fill: $color-accent;
+}
+

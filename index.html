@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +17,9 @@
   <body class="page">
     <!--Хедер-->
     <header class="page-header">
+
       <div class="nav-container">
+
         <nav class="header__nav">
           <a class="logo" href="./index.html"
             >Web<span class="logo__text">Studio</span>
@@ -25,44 +27,31 @@
 
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link current">Студія</a>
+              <a href="./index.html" class="nav__link current">Studio</a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link">Портфоліо</a>
+              <a href="./portfolio.html" class="nav__link">Portfolio</a>
             </li>
-            <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Contacts</a></li>
           </ul>
 
           <button class="mobile-menu__button open  js-open-menu" type="button">
-            <svg class="nav__icon" width="24" height="16"
+            <svg class="mobile-menu__icon" width="32" height="22"
             aria-label="Перемикач мобільного меню">
-                <use href="./images/icons.svg#menu_24px" ></use>
+                <use href="./images/icons.svg#icon-burger" ></use>
             </svg>
           </button>
         </nav>
+
         <ul class="header__connect">
           <li class="connect__item">
             <a href="mailto:info@devstudio.com" class="connect__link">
-              <svg class="connect__icon-envelope">
-                <use
-                  href="./images/icons.svg#envelope"
-                  width="16"
-                  height="12"
-                ></use>
-              </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="connect__item">
-            <a href="tel:+380961111111" class="connect__link">
-              <svg class="connect__icon-smartphone">
-                <use
-                  href="./images/icons.svg#smartphone"
-                  width="10"
-                  height="16"
-                ></use>
-              </svg>
-              +38 096 111 11 11
+            <a href="tel:+110001111111" class="connect__link">
+              +11 (000) 111-11-11
             </a>
           </li>
         </ul>
@@ -72,9 +61,9 @@
     <!--Main-->
     <main>
       <section class="hero overlay">
-        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <h1 class="hero__title">Effective Solutions <br> for Your Business</h1>
         <button class="hero__button" type="button" data-modal-open>
-          Замовити послугу
+          Order Service
         </button>
       </section>
 
@@ -93,10 +82,10 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="benefits__name">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <h3 class="benefits__name">Strategy</h3>
               <p class="benefits__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
+                Our goal is to identify the business problem to walk away
+                with the perfect and creative solution.
               </p>
             </li>
             <li class="benefits__item">
@@ -109,10 +98,10 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="benefits__name">ПУНКТУАЛЬНІСТЬ</h3>
+              <h3 class="benefits__name">Punctuality</h3>
               <p class="benefits__text">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
+                Bring the key message to the brand's audience for the best
+                price within the shortest possible time.
               </p>
             </li>
             <li class="benefits__item">
@@ -125,9 +114,10 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="benefits__name">ПЛАНУВАННЯ</h3>
+              <h3 class="benefits__name">Diligence</h3>
               <p class="benefits__text">
-                Так само консультація з широким активом значною мірою зумовлює.
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
               </p>
             </li>
             <li class="benefits__item">
@@ -140,10 +130,10 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="benefits__name">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <h3 class="benefits__name">Technologies</h3>
               <p class="benefits__text">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
+                Design practice focused on digital experiences. 
+                We bring forth a deep passion for problem-solving.
               </p>
             </li>
           </ul>
@@ -690,24 +680,52 @@
       </div>
     </div>
 
-    <div class="mobile-menu  js-menu-container">
-        <div class="mobile-container">
+    <div class="mobile-menu js-menu-container">
+           <div class="menu-container"> 
             <button class="mobile-menu__button-close  js-close-menu" type="button">
-                <svg witdh="24px" height="24px">
+                <svg class="mobile-menu__icon-close" witdh="24px" height="24px">
                     <use href="./images/icons.svg#close_24px"></use>
                 </svg>
             </button>
-            <ul class="mobile-menu__list">
-                <li class="mobile-menu__link">
-                    <a href="./index.html">Студія</a>
+           
+          
+
+            <ul class="menu-navigation__list">
+                <li class="menu-navigation__item">
+                    <a class="menu-navigation__link" href="./index.html">Студія</a>
                 </li>
-                <li class="mobile-menu__link">
-                    <a href="./portfolio.html">Портфоліо</a>
+                <li class="menu-navigation__item">
+                    <a class="menu-navigation__link" href="./portfolio.html">Портфоліо</a>
                 </li>
-                <li class="mobile-menu__link"><a href="">Контакти</a></li>
+                <li class="menu-navigation__item"><a class="menu-navigation__link" href="">Контакти</a></li>
+            </ul>
+            
+            <ul class="menu-contacts__list">
+              <li class="menu-contacts__item">
+                <a href="tel:+380961111111" class="menu-contacts__link-phone">+38 096 111 11 11</a>
+              </li>
+              <li class="menu-contacts__item">
+                <a href="mailto:info@devstudio.com" class="menu-contacts__link-mail">info@devstudio.com</a>
+              </li>
             </ul>
 
-        </div>
+             
+            <ul class="menu-social__list">
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link">Instagram<span class="dash">|</span></a>
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link">Twitter<span class="dash">|</span></a>
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link">Facebook<span class="dash">|</span></a>
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link">LinkedIn</a>
+              </li>
+             
+            </ul>
+          </div>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>

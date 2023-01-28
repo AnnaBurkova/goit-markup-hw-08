@@ -13,38 +13,47 @@
 <body class="page">
 
     <!--Хедер-->
-<header class="page-header">
-    <div class="nav-container">
-        <nav class="header__nav">
-            <a class="logo" href="./index.html">Web<span class="logo__text">Studio</span>
-            </a>
+    <header class="page-header">
 
+        <div class="nav-container">
+  
+          <nav class="header__nav">
+            <a class="logo" href="./index.html"
+              >Web<span class="logo__text">Studio</span>
+            </a>
+  
             <ul class="nav__list">
-                <li class="nav__item"><a href="./index.html" class="nav__link">Студія</a></li>
-                <li class="nav__item"><a href="./portfolio.html" class="nav__link  current">Портфоліо</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Studio</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link current">Portfolio</a>
+              </li>
+              <li class="nav__item"><a href="" class="nav__link">Contacts</a></li>
             </ul>
-        </nav>
-        <ul class="header__connect">
+  
+            <button class="mobile-menu__button open  js-open-menu" type="button">
+              <svg class="mobile-menu__icon" width="32" height="22"
+              aria-label="Перемикач мобільного меню">
+                  <use href="./images/icons.svg#icon-burger" ></use>
+              </svg>
+            </button>
+          </nav>
+  
+          <ul class="header__connect">
             <li class="connect__item">
-                <a href="mailto:info@devstudio.com" class="connect__link">
-                    <svg class="connect__icon-envelope">
-                        <use href="./images/icons.svg#envelope" width="16" height="12"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
+              <a href="mailto:info@devstudio.com" class="connect__link">
+                info@devstudio.com
+              </a>
             </li>
             <li class="connect__item">
-                <a href="tel:+380961111111" class="connect__link">
-                    <svg class="connect__icon-smartphone">
-                        <use href="./images/icons.svg#smartphone" width="10" height="16"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
+              <a href="tel:+110001111111" class="connect__link">
+                +11 (000) 111-11-11
+              </a>
             </li>
-        </ul>
-    </div>
-</header>
+          </ul>
+        </div>
+      </header>
     <main>
         <section class="portfolio">
             <div class="portfolio-container">

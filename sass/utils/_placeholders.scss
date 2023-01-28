@@ -6,22 +6,21 @@
 }
 
 %container {
-    // width: 1200px;
-    
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-
-    @media screen and (min-width: 480px){
-        width: 480px;
-    }   
-
-    @media screen and (min-width: 768px){
-        width: 768px;
+    min-width: 320px;
+    max-width: 480px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+      
+    @media screen and (min-width: 768px) {
+    max-width: 768px;
     }
-
-    @media screen and (min-width: 1200px){
-        width: 1200px;
+      
+    @media screen and (min-width: 1200px) {
+    min-width: 1158px;
+    max-width: 1200px;
+    width: 1158px;
     }
 }
 

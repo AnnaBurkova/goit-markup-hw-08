@@ -20,30 +20,30 @@
 
     @media screen and (min-width: 768px){
     background-image: url('/images/hero-tablet.jpg');
-
+    }
     @media screen and (min-width:1200px) {
         background-image: url('/images/hero.jpg');
     }   
 }
 
-// .hero__title {
-//     width: 360px;
-//     margin: auto;
-//     margin-bottom: 30px;
-//     color:$color-text-selection;
-//     font-weight: 900;
-//     font-size: 26px;
-//     line-height: 1.62;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     text-align: center;
+.hero__title {
+    width: 318px;
+    margin: auto;
+    color:$color-white;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
 
-//     @media (min-width:$desctop){
-//     width: 696px;
-//     font-size: 44px;
-//     line-height: 1.36;
-// }
-// }
+    @media (min-width:$desctop){
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    width: 360px;
+}
+}
 
 
 .hero__button {
@@ -71,6 +71,5 @@
 
     &:active {
     background-color: $color-button-active;
-}
 }
 }

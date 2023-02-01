@@ -1,68 +1,87 @@
-// .subscribe{
-//     width: 570px;
-//     margin: 0px 0px 0px auto;
-// }
+// Footer-form
 
-// .subscribe-form{
-//     display: flex;
-//     align-items: center;
-// }
+.subscribe {
+    width: 100%;
 
-// .subscribe__text{
-//     margin-bottom: 20px;
-//     font-weight: 700;
-//     font-style: normal;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: $color-text-selection;
-// }
+    @media screen and (min-width: 1200px) {
+        width: auto;
+    }
+}
 
-// .subscribe-form__input {
-//     width: 358px; 
-//     height: 50px;
-//     margin-right: 12px;
-//     padding: 16px;
-//     background-color: $color-backround-hero;
-//     border: 1px solid rgba(255, 255, 255, 0.3);
-//     border-radius: 4px;    
-//     color: $color-text-selection;
-// }
+.subscribe__text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $color-white;
+    letter-spacing: 0.02em;
+}
 
-// .subscribe-form__button {
-//     position: relative;
-//     font-family: inherit;
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.88;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     color:$color-text-selection;
-//     background-color: $color-accent;
-//     cursor: pointer;
-//     width: 200px;
-//     padding: 10px 62px 10px 28px;
-//     border: none;
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     border-radius: 4px;
-//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.subscribe-form__input {
+    width: 100%;
+    height: 40px;
 
-//     &:hover,
-//     &:focus{
-//     background-color:$color-button-main;
-//     }
+    background-color: $color-navy-blue;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding-left: 16px;
 
-//     &:active{
-//     background-color:$color-button-active ;
-//     }
-// }
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.0;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
 
-// .subscribe-form__icon{
-//     position: absolute;
-//     top: 25%;
-//     right: 22px;
-//     width: 24px;
-//     height: 24px
-// }
+    &:hover,
+    &:focus {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    }
+
+    @media screen and (min-width:768px) {
+        margin-right: 24px;
+        width: 264px;
+    }
+}
+
+.subscribe-form__button {
+    position: relative;
+    font-family: inherit;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $color-white;
+    background-color: $color-iris;
+    ;
+    width: 165px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    padding: 8px 64px 8px 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $color-ocean;
+    }
+
+    &:active {
+        background-color: $color-ocean ;
+    }
+}
+
+.subscribe-form__icon {
+    position: absolute;
+    top: 25%;
+    right: 22px;
+    width: 24px;
+    height: 24px
+}

@@ -1,9 +1,9 @@
 // Burger Styles
 .menu-social__list {
-        display: flex;
-        justify-content: space-between;
-        @extend %list;
-    }
+    display: flex;
+    justify-content: space-between;
+    @extend %list;
+}
 
 .social-networks__link {
     display: flex;
@@ -13,10 +13,15 @@
     text-align: center;
     border-radius: 50%;
     background-color: $color-iris;
+
+    &:hover,
+    &:focus {
+        background-color: $color-green;
+    }
 }
 
 .social-networks__icon {
-    fill:$color-iris;
+    fill: $color-iris;
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -24,7 +29,41 @@
     transform: translate(-50%, -50%);
     width: 24px;
     height: 24px;
+
+    &:hover,
+    &:focus {
+        background-color: $color-green;
+    }
 }
+
+
+// Footer Styles
+.social-networks__foot {
+    display: flex;
+    @extend %list;
+}
+
+.social-networks__item-foot:not(:last-child) {
+    margin-right: 16px;
+}
+
+.social-networks__link-foot {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+        background-color: $color-green;
+    }
+}
+
+
+// &:hover,
+// &:focus {
+//     fill:$color-text-selection;
+//     background-color: $color-accent;
+
+// }
+
 // .social-networks {
 //     display: flex;
 //     justify-content: space-around;

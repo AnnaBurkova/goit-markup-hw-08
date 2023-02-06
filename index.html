@@ -61,10 +61,12 @@
     <!--Main-->
     <main>
       <section class="hero overlay">
-        <h1 class="hero__title">Effective Solutions <br> for Your Business</h1>
+      <div class="hero-container">
+        <h1 class="hero__title">Effective Solutions for Your Business</h1>
         <button class="hero__button" type="button" data-modal-open>
           Order Service
         </button>
+      </div>
       </section>
 
       <!--Benefits-->
@@ -180,15 +182,17 @@
       </section>
 
       <!--Team-->
-      <!-- <section class="team">
+      <section class="team">
         <div class="team-container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__set">
             <li class="teammate">
               <img
                 class="teammate__photo"
-                src="./images/igor.jpg"
-                alt="photo-igor"
+                srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
+                src="./images/mark.jpg"
+                alt="photo-mark"
+                width="264"
               />
               <div class="teammate__info">
                 <h3 class="teammate__name">Ігор Дем'яненко</h3>
@@ -244,8 +248,10 @@
             <li class="teammate">
               <img
                 class="teammate__photo"
-                src="./images/olga.jpg"
-                alt="photo-olga"
+                srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
+                src="./images/tom.jpg"
+                alt="photo-mark"
+                width="264"
               />
               <div class="teammate__info">
                 <h3 class="teammate__name">Ольга Рєпіна</h3>
@@ -302,8 +308,10 @@
             <li class="teammate">
               <img
                 class="teammate__photo"
-                src="./images/mykola.jpg"
-                alt="photo-mykola"
+                srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
+                src="./images/camila.jpg"
+                alt="photo-mark"
+                width="264"
               />
               <div class="teammate__info">
                 <h3 class="teammate__name">Микола Тарасов</h3>
@@ -359,8 +367,10 @@
             <li class="teammate">
               <img
                 class="teammate__photo"
-                src="./images/myhailo.jpg"
-                alt="photo-myhailo"
+                srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
+                src="./images/daniel.jpg"
+                alt="photo-mark"
+                width="264"
               />
               <div class="teammate__info">
                 <h3 class="teammate__name">Михайло Єрмаков</h3>
@@ -415,7 +425,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Клієнти -->
       <section class="clients">
@@ -511,7 +521,7 @@
           <ul class="social-networks social-networks__foot">
             <li class="social-networks__item-foot">
               <a href="#" class="social-networks__link social-networks__link-foot">
-                <svg class="social-networks__icon">
+                <svg class="social-networks__icon social-networks__icon-foot">
                   <use
                     href="./images/icons.svg#instagram-24"
                     width="24px"
@@ -522,7 +532,7 @@
             </li>
             <li class="social-networks__item-foot">
               <a href="#" class="social-networks__link social-networks__link-foot">
-                <svg class="social-networks__icon">
+                <svg class="social-networks__icon social-networks__icon-foot">
                   <use
                     href="./images/icons.svg#twitter-24"
                     width="24px"
@@ -533,7 +543,7 @@
             </li>
             <li class="social-networks__item-foot">
               <a href="#" class="social-networks__link social-networks__link-foot">
-                <svg class="social-networks__icon">
+                <svg class="social-networks__icon social-networks__icon-foot">
                   <use
                     href="./images/icons.svg#facebook-24"
                     width="24px"
@@ -544,7 +554,7 @@
             </li>
             <li class="social-networks__item-foot">
               <a href="#" class="social-networks__link social-networks__link-foot">
-                <svg class="social-networks__icon">
+                <svg class="social-networks__icon social-networks__icon-foot">
                   <use
                     href="./images/icons.svg#linkedin-24"
                     width="24px"
@@ -582,22 +592,22 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button-modal" data-modal-close>
           <svg class="button-modal__icon">
             <use
-              href="./images/icons.svg#close"
-              width="18px"
-              height="18px"
+              href="./images/icons.svg#close-black"
+              width="8px"
+              height="8px"
             ></use>
           </svg>
         </button>
 
-        <p class="form__tittle">Залиште свої дані, ми вам передзвонимо</p>
+        <p class="form__tittle">Leave your contacts and we will call you back</p>
         <form class="form">
           <div class="form__field">
-            <label class="form__label" for="name">Ім'я</label>
+            <label class="form__label" for="name">Name</label>
             <input
               class="form__input"
               type="text"
@@ -614,7 +624,7 @@
             </svg>
           </div>
           <div class="form__field">
-            <label class="form__label" for="tel">Телефон</label>
+            <label class="form__label" for="tel">Phone</label>
             <input class="form__input" type="tel" name="tel" id="tel" />
             <svg class="form__icon">
               <use
@@ -625,7 +635,7 @@
             </svg>
           </div>
           <div class="form__field">
-            <label class="form__label" for="mail">Пошта</label>
+            <label class="form__label" for="mail">Email</label>
             <input class="form__input" type="email" name="mail" id="mail" />
             <svg class="form__icon">
               <use
@@ -636,12 +646,12 @@
             </svg>
           </div>
           <div>
-            <label class="form__label" for="comment">Коментар</label>
+            <label class="form__label" for="comment">Comment</label>
             <textarea
               class="form__comments"
               name="comment"
               id="comment"
-              placeholder="Введіть текст"
+              placeholder="Text input"
             ></textarea>
           </div>
           <div class="form-checkbox">
@@ -656,14 +666,14 @@
               <svg class="form-checkbox__icon">
                 <use href="./images/icons.svg#check"></use>
               </svg>
-              Погоджуюся з розсилкою та приймаю
-              <a href="">Умови договору</a>
+              I accept the terms and conditions of the 
+              <a class="form-checkbox__privacy" href="">Privacy Policy</a>
             </label>
           </div>
-          <button class="button-form" type="submit">Відправити</button>
+          <button class="button-form" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <div class="mobile-menu js-menu-container">
            <div class="menu-container"> 

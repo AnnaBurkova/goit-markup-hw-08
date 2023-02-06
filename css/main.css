@@ -550,39 +550,14 @@ p {
           align-items: center;
 }
 
+.work__item {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(77, 90, 229, 0.1)), to(rgba(77, 90, 229, 0.1)));
+  background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1));
+  background-blend-mode: soft-light, normal;
+  border: 1px solid #E7E9FC;
+}
 .work__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.work__thumb {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.work__thumb::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  height: 70px;
-  width: 100%;
-  bottom: 0;
-  background-color: rgba(47, 48, 58, 0.8);
-}
-
-.work__text {
-  position: absolute;
-  bottom: 27px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
+  margin-right: 24px;
 }
 
 /* Team */

@@ -1,21 +1,20 @@
-// /* Portfolio */
+/* Portfolio */
 
-// .portfolio {
-//     padding-top: 94px;
-// }
+.portfolio {
+    padding-top: 96px;
+}
 
-// .portfolio-container{
-//     padding-top: 94px;
-//     @extend %section;
-//     @extend %container;
-// }
+.portfolio-container {
+    @extend %section;
+    @extend %container;
+}
 
-// .portfolio__title {
-//     @extend %section-title;
-//     @extend %visually-hidden;
-// }
+.portfolio__title {
+    @extend %section-title;
+    @extend %visually-hidden;
+}
 
-// .flex-container {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}

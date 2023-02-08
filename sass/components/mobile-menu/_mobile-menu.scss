@@ -64,6 +64,11 @@
   }
 }
 
+.current-mobile {
+  position: relative;
+  color: $color-ocean;
+}
+
 .menu-contacts__list {
   @extend %list;
 }

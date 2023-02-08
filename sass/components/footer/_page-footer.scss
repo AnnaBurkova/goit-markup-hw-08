@@ -4,6 +4,11 @@
     background-color: $color-navy-blue;
     padding-top: 96px;
     padding-bottom: 96px;
+    
+    @media screen and (min-width:1200px){
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 .footer-container {
@@ -19,13 +24,11 @@
         flex-direction: row;
         text-align: left;
 
-        padding-left: 108px;
-        padding-right: 108px;
-    }
 
-    @media screen and (min-width: 1200px) {
-        justify-content: space-between;
-        padding-left: 16px;
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            padding-left: 108px;
+            padding-right: 108px;
+        }
     }
 }
 
@@ -47,6 +50,7 @@
 
     @media screen and (min-width: 1200px) {
         margin-bottom: 0px;
+        margin-left: 120px;
     }
 }
 

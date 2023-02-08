@@ -60,6 +60,9 @@
                 rgba(47, 48, 58, 0.7)),
             url('../images/hero-desktop.jpg');
         height: 600px;
+        width: 1440px;
+        margin-left: auto;
+        margin-right:auto ;
     }
 
     @media screen and (min-device-pixel-ratio: 2),

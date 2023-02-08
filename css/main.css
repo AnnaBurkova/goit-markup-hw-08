@@ -119,11 +119,11 @@ p {
   }
 }
 
-.portfolio-container, .clients, .work, .benefits {
+.portfolio-container, .clients, .work {
   padding-bottom: 96px;
 }
 @media screen and (min-width: 1200px) {
-  .portfolio-container, .clients, .work, .benefits {
+  .portfolio-container, .clients, .work {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -304,10 +304,6 @@ p {
   }
 }
 
-.connect__item:not(:last-child) {
-  margin-bottom: 4px;
-}
-
 @media (min-width: 1200px) {
   .connect__item:not(:last-child) {
     margin-bottom: 0;
@@ -387,6 +383,9 @@ p {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.7)), to(rgba(47, 48, 58, 0.7))), url("../images/hero-desktop.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), url("../images/hero-desktop.jpg");
     height: 600px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -450,10 +449,17 @@ p {
 /* Benefits */
 .benefits {
   padding-top: 96px;
+  padding-bottom: 96px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 120px;
+    padding-bottom: 0px;
+  }
 }
 
 .benefits__set {
-  margin: 0px -15px;
+  margin: 0px -16px;
 }
 @media screen and (min-width: 768px) {
   .benefits__set {
@@ -478,6 +484,7 @@ p {
   .benefits__set .benefits__item:not(:last-child) {
     -ms-flex-preferred-size: calc((100% - 24px) / 2);
         flex-basis: calc((100% - 24px) / 2);
+    width: 356px;
     margin-right: 24px;
   }
   .benefits__set .benefits__item:not(:last-child):nth-child(2n) {
@@ -757,7 +764,12 @@ p {
 
 /* Clients */
 .clients {
-  padding-top: 94px;
+  padding-top: 96px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 120px;
+  }
 }
 
 .clients__set {
@@ -883,6 +895,12 @@ p {
   padding-top: 96px;
   padding-bottom: 96px;
 }
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
 
 .footer-container {
   display: -webkit-box;
@@ -909,16 +927,12 @@ p {
         -ms-flex-direction: row;
             flex-direction: row;
     text-align: left;
-    padding-left: 108px;
-    padding-right: 108px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-left: 16px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
 }
 
@@ -943,6 +957,7 @@ p {
 @media screen and (min-width: 1200px) {
   .net-pages {
     margin-bottom: 0px;
+    margin-left: 120px;
   }
 }
 
@@ -975,6 +990,7 @@ p {
 @media screen and (min-width: 1200px) {
   .subscribe {
     width: auto;
+    margin: 0px 0px 0px auto;
   }
 }
 
@@ -1002,6 +1018,7 @@ p {
   line-height: 2;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
+  outline: none;
 }
 .subscribe-form__input:hover, .subscribe-form__input:focus {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1356,10 +1373,6 @@ p {
 }
 
 /* Portfolio */
-.portfolio {
-  padding-top: 96px;
-}
-
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1388,7 +1401,7 @@ p {
   letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 4px;
-  padding: 6px 22px;
+  padding: 12px 24px;
   min-width: 73px;
   text-align: center;
   border: none;
@@ -1567,6 +1580,11 @@ p {
   cursor: pointer;
 }
 .menu-navigation__link:hover, .menu-navigation__link:focus {
+  color: #404BBF;
+}
+
+.current-mobile {
+  position: relative;
   color: #404BBF;
 }
 

@@ -1,7 +1,10 @@
 /* Clients */
 .clients {
-    padding-top: 94px;
+    padding-top: 96px;
     @extend %section;
+    @media screen and (min-width: 1200px){
+        padding-top: 120px;
+    }
 
 }
 

@@ -2,6 +2,7 @@
 .clients {
     padding-top: 94px;
     @extend %section;
+
 }
 
 .clients-container {
@@ -18,8 +19,8 @@
     @extend %list;
 
     @media screen and (min-width: 768px) and (max-width:1199px) {
-        padding-left: 92px;
-        padding-right: 92px;
+        padding-left: 89px;
+        padding-right: 89px;
     }
 }
 
@@ -33,9 +34,11 @@
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (max-width:767px) {
-        flex-basis: calc((100% - 14px)/2);
-        margin-right: 14px;
+        flex-basis: calc((100% - 16px) / 2);
+        margin-right: 16px;
         margin-bottom: 72px;
+        width: 168px;
+
 
         &:nth-child(2n) {
             margin-right: 0;
@@ -47,11 +50,9 @@
     }
 
     @media screen and (min-width: 768px) and (max-width:1199px) {
-        flex-basis: calc((100% - 2 *48px)/3);
+        flex-basis: calc((100% - 48px) / 3);
         margin-right: 24px;
         margin-bottom: 72px;
-        width: 168px;
-
 
         &:nth-child(3n) {
             margin-right: 0;
